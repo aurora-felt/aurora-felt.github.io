@@ -1,0 +1,33 @@
+package:
+  name: blog
+  dependencies:
+    - affjax-web
+    - argonaut
+    - console
+    - effect
+    - halogen
+    - halogen-css
+    - markdown-it
+    - options
+    - prelude
+    - web-socket
+  test:
+    main: Test.Main
+    dependencies: []
+workspace:
+  packageSet:
+    registry: 77.11.1
+  extraPackages:
+    markdown-it:
+      repo: https://github.com/nonbili/purescript-markdown-it.git
+      version: v0.6.0
+      dependencies:
+        - effect
+        - prelude
+        - psci-support
+        - foldable-traversable
+        - foreign
+        - tuples
+        - jest
+        - node-process
+        - options
